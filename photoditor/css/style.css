@@ -1,0 +1,86 @@
+:root{
+	--first:#04202a; --second:#2e4040; --third:#5a6e65; --fourth:#c7cfc6;
+	}
+
+*{
+	padding:0; 
+	margin:0;
+	box-sizing:border-box; 
+	} 
+	
+body{ 
+width:100%; background:var(--fourth); 
+}
+
+ .navbar{
+	background:var(--first);
+	border-bottom:2px solid #28a745;
+	} 
+	
+	.navbar-brand{
+		color:var(--fourth); 
+		font-size:2em; 
+	} 
+	
+	#imagery{ padding-top:5em; } 
+	
+	canvas{ 
+	background:var(--third);
+	width:80%;
+	margin:0 10%; 
+	text-align:center;
+	
+	}
+
+	[type="file"]{ 
+	display:none;
+	} 
+	.img .btn{ 
+	height:50px;
+	width:100px;
+	} 
+	
+	.alert{ 
+	background:var(--third);
+	} 
+	
+	.card .btn{ 
+	width:50%;
+	border-radius:0;
+	}
+
+	#controls .btn{
+		background:var(--second); 
+		color:var(--fourth); 
+		}
+
+	#controls .btn:hover{ 
+	background:transparent; 
+	color:var(--second);
+	border:2px solid var(--fourth); 
+	font-weight:bold;
+	}
+
+	#fil,#eff{ 
+	font-size:1.5em;
+	background:var(--first);
+	color:var(--fourth); 
+	} 
+	
+	.card-header{ 
+	font-size:0.8rem; 
+	background:var(--fourth); 
+	color:var(--second); 
+	} 
+	
+	#hue,#gam,#blur,#sepia{ 
+	width:100%; 
+	} 
+	
+	
+	@media(max-width:360px){ 
+	canvas{ 
+	width:98%; 
+	margin:0 1%;
+	} 
+	} 

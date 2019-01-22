@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+
+	<head>
+	<meta charset="UTF-8">
+		<title>
+		Photoditor
+		</title>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+		
+	
+	</head>
+
+		<body>
+		<!-- As a link -->
+<nav class="navbar fixed-top">
+	<div class="container">
+	<a class="navbar-brand" href="#">Photoditor</a>
+	</div>  
+</nav>
+
+<main>
+	<section id="imagery">
+	<div class="container">
+		<canvas id="can" class="my-5"></canvas>
+		<div class="img-cont row d-flex flex-column justify-content-center flex-sm-row  mb-3">			
+			
+			<input type="file" id="upload" placeholder="Upload image"/>
+			<label for="upload" class ="btn btn-success mx-1"><i class="fa fa-upload" aria-hidden="true"></i>
+Upload image</label>
+		
+			
+			<label id="download" class="btn btn-success mx-1"><i class="fa fa-download" aria-hidden="true"></i>
+download image</label>
+		
+			<label id="remove" class="btn btn-success mx-1"><i class="fa fa-undo"></i> Revert</label>		
+		</div>
+		
+	</div>
+	</section>
+	
+	<section id="controls">
+	<div class="container">
+	<div class="row">
+		<div class="col-xs-12 col-md-6">
+			
+			<div class="card mb-3">
+			  <div id="fil" class=" card-header text-center mb-3">Filters</div>			
+				<div class="row px-3">
+			
+			<div class="col-md-6 col-lg-3">
+			<div class="card mb-3">
+			  <div class="card-header text-center">Brightness</div>			
+				<div class=" d-flex">
+					<button id="brit-dec" class="btn btn-secondary">-</button>
+					<button id="brit-inc" class="btn btn-secondary">+</button>
+				</div>
+  
+			</div>
+			</div>
+			
+			<div class="col-md-6 col-lg-3">
+			<div class="card mb-3">
+			  <div class="card-header text-center">Contrast</div>			
+				<div class="d-flex">
+					<button id="trast-dec" class="btn btn-secondary">-</button>
+					<button id="trast-inc" class="btn btn-secondary">+</button>
+				</div>
+  
+			</div>
+			</div>
+			<div class="col-md-6 col-lg-3">
+			
+			<div class=" card mb-3">
+			  <div class="card-header text-center">Saturation</div>			
+				<div class="d-flex">
+					<button id="sat-dec" class="btn btn-secondary">-</button>
+					<button id="sat-inc" class="btn btn-secondary">+</button>
+				</div>
+  
+			</div>
+			</div>
+			<div class="col-md-6 col-lg-3">
+			<div class="card mb-3">
+			  <div class="card-header text-center">Exposure</div>			
+				<div class="d-flex">
+					 <button id="exp-dec" class="btn btn-secondary">-</button>
+					<button id="exp-inc" class="btn btn-secondary">+</button>
+				</div>
+  
+			</div>
+			</div>
+			
+			<div class="col-md-6 col-lg-3"><button id="hue" class="btn mb-3">Hue</button></div>	
+			<div class="col-md-6 col-lg-3"><button id="blur" class="btn mb-3">Blur</button></div>
+			<div class="col-md-6 col-lg-3"><button id="sepia" class="btn mb-3" title="keep clicking to increase ME!!!!">Sepia</button></div>
+			<div class="col-md-6 col-lg-3"><button id="gam" class="btn mb-3">Gamma</button></div>						
+		</div>
+  
+			</div>
+			
+			
+			
+		</div>	
+		
+			
+			
+		
+		
+		<div class="col-xs-12 col-md-6">
+		
+		<div class="card mb-3">
+			  <div id="eff" class=" card-header text-center mb-3">Effect</div>			
+				<div class="row px-3 ">		
+			<div class="col-md-6 col-lg-3"><button id="hue" class="btn mb-2">Hue</button></div>	
+			<div class="col-md-6 col-lg-3"><button id="blur" class="btn mb-2">Blur</button></div>
+			<div class="col-md-6 col-lg-3"><button id="sepia" class="btn mb-2" title="keep clicking to increase ME!!!!">Sepia</button></div>
+			<div class="col-md-6 col-lg-3"><button id="gam" class="btn mb-2">Gamma</button></div>						
+		</div>
+  
+			</div>
+			
+		</div>
+	</div>
+	</div>
+	
+	</section>
+	
+</main>
+
+
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/camanjs/4.1.2/caman.full.pack.js"></script>
+		<script src="js/script.js"></script>
+		</body>
+
+</html>
